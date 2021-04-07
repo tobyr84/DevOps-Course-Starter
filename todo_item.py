@@ -1,12 +1,12 @@
 import os
 
 class TodoItem:
-    # You call this by running TodoItem(id, title, status)
-    def __init__(self, id, title, status, dateLastActivity):
+    # You call this by running TodoItem(id, title, status, dateLastActivity)
+    def __init__(self, id, title, status):
         self.id = id
         self.title = title
         self.status = status
-        self.date = dateLastActivity
+        #self.date = dateLastActivity
 
     @classmethod
     def from_trello_card(cls, trello_card):

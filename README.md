@@ -81,6 +81,34 @@ You'll need a trello account and fill in your trello credentials in the .env fil
 
 Please ensure that you populate the `.env` file with the details of names and IDs of your respective lists within Trello. 
 
+## Testing 
 
+The application has been built with some standard tests to ensure that the everything is fully working.  In order to use these, you need to run the following python test files 
 
+``` 
+$ python test_view_model.py
+```
+This is the main file that contains all of the tests.  Running this python file will run all tests on the application.  
 
+The following tests will also ensure the application is fully working prior to use.  They will test the functionality around the tasks within the application.  
+```
+* test_to_do
+```
+Tests and confirms the status of all tasks not yet started.  
+
+```
+* test_doing
+```
+Tests and confirms the status of all tasks that are currently In Progress.
+```
+* test_done
+```
+Tests and confirms the status of all tasks that are competed.  
+```
+* test_show_all_done_items_returns_for_small_numbers_of_items
+```
+This tests the functionality about returning a shortened list of either 5 or less completed items.  This will support the different view options within the application.  
+```
+* test_show_all_done_items_returns_false_for_large_numbers_of_items
+```
+This test will confirm the function of returning results for completed tasks whereby the quantity if greater than 5.  This will also support differnt view options within the application.  
