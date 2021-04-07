@@ -1,9 +1,11 @@
 # DevOps Apprenticeship: Project Exercise
 
-## Setup.sh
+## Setup
  
 
-Designed to automate the boring stuff for you.  Updates your resources, installs the pre-requisites, installs the latest version of python, installs poetry, clones the required GIT respository for the App and establishes your dependences.  
+Setup.sh has been designed to automate the boring stuff for you :smile: 
+
+Updates your resources, installs the pre-requisites, installs the latest version of python, installs poetry, clones the required GIT respository for the App and establishes your dependences.  
 
 All you need to do is input your Trello credentials into the .env file
  
@@ -81,7 +83,7 @@ You'll need a trello account and fill in your trello credentials in the .env fil
 
 Please ensure that you populate the `.env` file with the details of names and IDs of your respective lists within Trello. 
 
-## Testing 
+### ** Testing **
 
 The application has been built with some standard tests to ensure that the everything is fully working.  In order to use these, you need to run the following python test files 
 
