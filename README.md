@@ -114,3 +114,12 @@ This tests the functionality about returning a shortened list of either 5 or les
 * test_show_all_done_items_returns_false_for_large_numbers_of_items
 ```
 This test will confirm the function of returning results for completed tasks whereby the quantity if greater than 5.  This will also support differnt view options within the application.  
+
+ 
+### Docker
+
+Use the following command to pass the key variables into the container.  
+```
+docker run --env-file .env -p 5000:5000 todo-app 
+```
+
