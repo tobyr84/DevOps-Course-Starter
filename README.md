@@ -116,7 +116,7 @@ This tests the functionality about returning a shortened list of either 5 or les
 This test will confirm the function of returning results for completed tasks whereby the quantity if greater than 5.  This will also support differnt view options within the application.  
 
  
-### Docker
+## Docker
 
 To create a Docker production image, use the following;
 
@@ -135,3 +135,16 @@ Use the following command to pass the key variables into the container.
 ```
 docker run --env-file .env -p 5000:5000 todo-app 
 ```
+
+Docker can also run your test to ensure it's fully working.  To do this, use the following to build a test; 
+
+```
+docker build --target test --tag todo-app:test .
+```
+
+Use the following to run the tests;
+
+```
+docker run --env-file .env -p 5000:5000 todo-app:test
+```
+
