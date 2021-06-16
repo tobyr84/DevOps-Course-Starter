@@ -118,8 +118,20 @@ This test will confirm the function of returning results for completed tasks whe
  
 ### Docker
 
+To create a Docker production image, use the following;
+
+```
+docker build --target production --tag todo-app:prod .
+```
+
+To create a Docker development image, use the following;
+
+```
+docker build --target production --tag todo-app:dev .
+```
+
 Use the following command to pass the key variables into the container.  
+
 ```
 docker run --env-file .env -p 5000:5000 todo-app 
 ```
-

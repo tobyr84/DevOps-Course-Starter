@@ -1,10 +1,13 @@
 FROM python:3.9.5-slim-buster as base
 
-COPY . .
-
 RUN pip install flask
 RUN pip install poetry
+
+COPY *.toml . 
+
 RUN poetry install
+
+COPY . .
 
 ENTRYPOINT poetry run flask run --host 0.0.0.0 --port 5000
 
